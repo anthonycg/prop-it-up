@@ -7,19 +7,23 @@ function App() {
       <PersonCard 
       firstName = {'Jane'} lastName = {'Doe'} 
       age = {45}
-      hairColor = {'black'}/>
+      hairColor = {'black'}
+      initialClicks = {3}/>
       <PersonCard 
       firstName = {'Peter'} lastName = {'Theil'} 
       age = {42}
-      hairColor = {'green'}/>
+      hairColor = {'green'}
+      initialClicks = {5}/>
       <PersonCard 
       firstName = {'Robbie'} lastName = {'Meeks'} 
       age = {61}
-      hairColor = {'black'}/>
+      hairColor = {'black'}
+      initialClicks = {0}/>
       <PersonCard 
       firstName = {'Big'} lastName = {'June'} 
       age = {72}
-      hairColor = {'gray'}/>
+      hairColor = {'gray'}
+      initialClicks = {78}/>
 
     </div>
   );
