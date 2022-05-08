@@ -1,16 +1,21 @@
 import React, {useState} from 'react';
 
 const PersonCard = (props) => {
-    const [state, setState] = useState(props.initialClicks);
+    const [age, setAge] = useState(props.age);
+    
+    // const handleClick = () => {
+    //     console.log("hello" + props.age)
+    //     setAge(props.age + 1);
+    // }
+
     return (
         <div>
             <h2> {props.lastName} , {props.firstName}</h2>
-            <p>Age: {props.age}</p>
+            <p>Age: {age}</p>
             <p>Hair Color: {props.hairColor}</p>
-            <p>Click count: {state}</p>
-            <button onClick ={ (event) => setState(state + 1)}>click to count {props.firstName}</button>
+            <button onClick ={ (event) => setAge(age + 1) }>Birthday button for {props.firstName}</button>
         </div>
-    )
+    );
 }
 
 
